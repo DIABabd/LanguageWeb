@@ -1,0 +1,131 @@
+body {
+  background-color: #232330;
+}
+
+.word-kind {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+  margin-bottom: 50px;
+  border-radius: 42px;
+  background: #232330;
+  box-shadow:  19px 19px 38px #222232,
+  -19px -19px 38px #242436;
+}
+
+.nouns-button ,
+.verbs-button,
+.adjectives-button,
+.adverbs-button,
+.pronouns-button,
+.prepositions-button,
+.conjunctions-button {
+  font-size: 19px;
+  font-weight: bold;
+  background-color: #28283f;
+  height: 95px;
+  width: 222px;
+  border-radius: 80px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #e43e5a;
+  transition: all 1000ms;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #e43e5a;
+}
+
+.nouns-button:hover,
+.verbs-button:hover,
+.adjectives-button:hover,
+.adverbs-button:hover,
+.pronouns-button:hover,
+.prepositions-button:hover,
+.conjunctions-button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #e228a4;
+  box-shadow: 4px 5px 17px -4px #e42646;
+}
+
+.nouns-button::before,
+.verbs-button::before,
+.adjectives-button::before,
+.adverbs-button::before,
+.pronouns-button::before,
+.prepositions-button::before,
+.conjunctions-button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #af2c48;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+.nouns-button:hover::before,
+.verbs-button:hover::before,
+.adjectives-button:hover::before,
+.adverbs-button:hover::before,
+.pronouns-button:hover::before,
+.prepositions-button:hover::before,
+.conjunctions-button:hover::before {
+  width: 250%;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+.result-bar {
+  display: flex;
+  flex-direction: column;
+  width: 1900px;
+}
+
+.word-bar {
+  height: 125px;
+  margin-bottom: 17px;
+  font-size: 110px;
+  color: #c72447;
+  text-align: center;
+  background: #28283f;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.explanation-bar {
+  display: flex;
+  height: 280px;
+  margin-bottom: 20px;
+  color: #af2c48;
+  font-size: 55px;
+  background: #28283f;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  }
+
+.example-bar {
+  display: flex;
+  height: 350px;
+  font-size: 55px;
+  color: #af2c48;
+  background: #28283f;
+  border-radius: 20px;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
